@@ -1,0 +1,140 @@
+/* Main content styles */
+.main-content {
+    display: flex;
+}
+
+/* Content left styles */
+.content-left {
+    flex: 3;
+    /* Chiếm 3/4 chiều ngang màn hình */
+}
+
+/* Content right styles */
+.content-right {
+    flex: 1;
+    /* Chiếm 1/4 chiều ngang màn hình */
+    padding: 20px;
+}
+
+/* Ranking styles */
+.ranking {
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.content-left {
+    margin-left: 50px;
+    width: 56%;
+    float: left;
+}
+
+.content-right {
+    width: 25%;
+    float: right;
+}
+
+.result-list,
+.upcoming-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-item,
+.upcoming-item {
+    border: 1px solid #ccc;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.result-item {
+    background-color: #f2f2f2;
+}
+
+/* CSS cho container chứa các câu lạc bộ */
+.clubs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CSS cho mỗi câu lạc bộ */
+.club-item {
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hiệu ứng hover */
+.club-item:hover {
+    transform: scale(1.05);
+    border-color: #ffd700;
+    /* Màu vàng làm nổi bật */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* CSS cho ảnh câu lạc bộ */
+.club-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #fff;
+}
+
+/* CSS cho tên câu lạc bộ */
+.club-name {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.khunglong {
+    text-align: center;
+    font-size: 40px;
+    transition: color 0.3s ease;
+    color: #3b0b0b;
+    font-family: 'Your Desired Font', sans-serif;
+    /* Replace 'Your Desired Font' with the desired font name */
+    transition: color 0.3s ease;
+}
+
+.khunglong:hover {
+    color: rebeccapurple;
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.container h2,
+.container h3,
+.container p {
+    margin: 10px 0;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container div {
+    padding: 20px;
+}
+
+.container div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.container div p {
+    margin-bottom: 10px;
+}
+
+.container div:last-child p {
+    margin-bottom: 0;
+}
